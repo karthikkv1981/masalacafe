@@ -12,4 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  nitro: {
+    // Plain Node.js server output (node .output/server/index.mjs) instead of the
+    // default Cloudflare Workers build — simplest option for a self-hosted demo.
+    preset: "node-server",
+  },
 });
