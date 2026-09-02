@@ -1,0 +1,1 @@
+grant insert, update, delete on public.menu_items to authenticated;
